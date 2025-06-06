@@ -1,0 +1,25 @@
+<html>
+<body>
+<form method="post">
+Enter Large string
+<input type="text" name="t1">
+<br>
+Enter Small string
+<input type="text" name="t2">
+<br>
+<input type="submit" value="okk">
+<br>
+</form>
+</body>
+</html>
+<?php
+  $s1=$_POST["t1"];
+$s2=$_POST["t2"];
+
+$k=strpos($s1,$s2);
+if($k==false)
+   printf("Small string not found");
+else
+   printf("Small string found");
+
+?>
