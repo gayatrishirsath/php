@@ -1,0 +1,17 @@
+<?php
+      $s="om";
+
+      $s1=str_pad($s,10,"#");
+     echo("<br>$s1");
+
+     $s1=str_pad($s,10,"#",STR_PAD_BOTH);
+     echo("<br>$s1");
+
+      $s1=str_pad($s,10,"#",STR_PAD_LEFT);
+     echo("<br>$s1");
+
+      $s1=str_pad($s,10,"#",STR_PAD_RIGHT);
+     echo("<br>$s1");
+
+
+?>
