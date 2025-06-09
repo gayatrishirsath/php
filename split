@@ -1,0 +1,6 @@
+<?php
+  $s1="RBNB   CDJ    JTS   SSB";  
+  $s2=preg_split("/  /",$s1);
+
+ print_r($s2);
+?>
