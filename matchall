@@ -1,0 +1,13 @@
+<?php
+  $s1="PHP is server side scripting language and JAVA is client side scripting language";  
+  $s2="script";
+
+ if(preg_match_all("/$s2/",$s1,$k))
+    {
+      echo("FOUND");
+      print_r($k);
+     }
+  else
+  echo("NOT FOUND");
+
+?>
