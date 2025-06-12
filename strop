@@ -1,0 +1,52 @@
+<html>
+<body>
+<form method="post">
+	Enter Firts String:<br>
+	<input type="text" name="t1"><br>
+         Enter Second String:<br>
+	<input type="text" name="t2"><br>
+        <input type="SUBMIT" ><br>
+
+</form>
+</body>
+</html>
+<?php
+$s1=$_POST["t1"];
+$s2=$_POST["t2"];
+  found($s1,$s2);
+cmp($s1,$s2);
+
+function found($s1,$s2)
+{
+  $k=strpos($s1,$s2);
+ if($k==false)
+{
+   echo("Substring not found");
+}
+else
+{
+  echo("Substring  found at position=".$k);
+
+}
+}
+function cmp($s1,$s2)
+{
+  $k=strcmp($s1,$s2);
+ if($k==0)
+{
+   echo("<br>String are same");
+}
+if($k==1)
+{
+  echo("<br>First string are greater");
+
+}
+if($k==-1)
+{
+  echo("<br>Second string are greater");
+
+}
+
+
+}
+?>
