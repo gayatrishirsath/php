@@ -1,0 +1,63 @@
+<html>
+<body>
+<form method="post">
+	Enter String:<br>
+	<input type="text" name="t1"><br><br>
+<input type="radio" name="r1" value="a">a.Length of string<br>
+<input type="radio" name="r1" value="b">b.Vowel Count<br>
+<input type="radio" name="r1" value="c">c.Convert Titlecase<br>
+<input type="radio" name="r1" value="d">d.fill into ***<br>
+<input type="radio" name="r1" value="e">e.Remove Space<br>
+<input type="radio" name="r1" value="f">f.Reverse<br>
+<input type="Submit">
+</form>
+</body>
+</html>
+<?php
+  $s1=$_POST["t1"];
+ $ch=$_POST["r1"];
+
+  if($ch=="a")
+   {
+      strlength($s1);
+   }
+ if($ch=="b")
+   {
+    vowel($s1);
+   }
+if($ch=="c")
+   {
+    echo("Title Case=".ucwords($s1));
+   }
+if($ch=="d")
+   {
+    $s2=str_pad($s1,10,"*",STR_PAD_BOTH);
+    echo("<br>$s2");
+   }
+if($ch=="e")
+   {
+     $s2=trim($s1);
+    echo("Remove space=$s2");
+   }
+if($ch=="f")
+   {
+     $s2=strrev($s1);
+    echo("Reverse String=$s2");
+   }
+ 
+  function strlength($s1)
+  {
+    for($i=0;$i<strlen($s1);$i++);
+    echo("length =".$i);
+  }
+function vowel($s1)
+  {
+    for($i=0;$i<strlen($s1);$i++)
+    {
+  
+    if($s1[$i]=='a'||$s1[$i]=='e'||$s1[$i]=='i'||$s1[$i]=='o'||$s1[$i]=='u')
+     $cnt++;
+    }
+  echo("<br>Vowel count=".$cnt);
+  }
+?>
