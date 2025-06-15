@@ -1,0 +1,8 @@
+<?php
+function strlength($s)
+{
+ for($i=0;$i<strlen($s);$i++);
+        echo("Lenght of string=".$i);
+}
+ strlength("Shrirampur");
+?>
