@@ -1,0 +1,30 @@
+<?php
+$a=array(11,-22,33,44,55,66);
+for($i=0;$i<6;$i++)
+  {
+    if($a[$i]>0)
+       {
+        echo("<br>Array element are positive=".$a[$i]);
+        }
+ else if($a[$i]<0)
+       {
+        echo("<br>Array element are Negative=".$a[$i]);
+        }
+   }
+{
+  $sum=0;
+for($i=0;$i<6;$i++)
+      {
+        $sum=$sum+$a[$i];
+        }
+  echo("<br>Sum of array elemnts are=".$sum);
+ }
+{  
+   $avg=0;
+for($i=0;$i<6;$i++)
+      {
+        $avg=$avg+($a[$i])/6;
+        }
+ echo("<br>Average of array elemnts are=".$avg);
+}
+?>
