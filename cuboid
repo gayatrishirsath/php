@@ -1,0 +1,24 @@
+<html>
+<body>
+<form method="POST"> <!-- Fixed 'from' to 'form' -->
+    Enter Length: <input type="text" name="t1"><br>
+    Enter Breadth: <input type="text" name="t2"><br>
+    Enter Height: <input type="text" name="t3"><br>
+    <input type="submit" value="Area and Volume of Cuboid"><br>
+</form>
+</body>
+</html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $l = $_POST["t1"];
+    $b = $_POST["t2"];
+    $h = $_POST["t3"];
+
+           $a = 2 * (($l * $b) + ($l * $h) + ($b * $h));
+        $v = $l * $b * $h;
+
+        echo "<br>Surface Area of Cuboid = " . $a;
+        echo "<br>Volume of Cuboid = " . $v;
+  }
+?>
