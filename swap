@@ -1,0 +1,15 @@
+<?php
+   $a=10;
+   $b=20;
+    echo("Before swaping value of a and b are=");
+    echo(" a=".$a);
+    echo("   b=".$b);
+
+   $t=$a;
+   $a=$b;
+   $b=$t;
+  echo("<br>After swaping value of a and b are=");
+    echo(" a=".$a);
+    echo("   b=".$b);
+
+?>
