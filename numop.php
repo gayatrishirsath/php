@@ -1,0 +1,46 @@
+<html>
+<body>
+<form method="post" action="numop.php">
+Enter First Number
+<input type="text" name="t1"><br>
+Enter Second Number
+<input type="text" name="t1"><br>
+<input type="SUBMIT">
+</form>
+</body>
+</html>
+<?php
+$a=$_POST["t1"];
+$b=$_POST["t1"];
+mod($a,$b);
+power($a,$b);
+sum($a);
+fact($a,$b);
+
+function mod($a,$b)
+{
+  echo("Mod of number=".$a%$b);
+}
+function power($a,$b)
+{   $p=1;
+  for($i=0;$i<=$b;$i++)
+              $p=$p*$a;
+      echo("<br>Powerof number=".$p);
+}
+function sum($a)
+{  
+      $s=0;
+  for($i=0;$i<=$a;$i++)
+              $s=$s+$a;
+      echo("<br>Sum of number=".$s);
+}
+function fact($a)
+{  
+      $f=1;
+  for($i=1;$i<=$a;$i++)
+              $f=$f*$i;
+      echo("<br>factorial of number=".$f);
+}
+
+
+?>

@@ -1,0 +1,6 @@
+<?php
+  $s1="PHP is server side scripting language and JAVA is client side scripting language";  
+  $s2=preg_replace("/PHP/","PYTHON",$s1);
+
+ echo("$s2");
+?>

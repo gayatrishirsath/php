@@ -1,0 +1,44 @@
+<?php
+function countVowels($s)
+{ 
+    $c1=0;
+    $c2=0;
+    $c3=0;
+   $c4=0;
+   $c5 = 0; 
+   $cnt = 0;
+
+    for ($i = 0; $i< strlen($s); $i++)
+ {
+        if ($s[$i] == 'a') 
+          { $c1++;
+            $cnt++; 
+          }
+      else if ($s[$i] == 'e') 
+          { $c2++;
+            $cnt++; 
+          }
+      else if ($s[$i] == 'i') 
+          { $c3++;
+            $cnt++; 
+          }
+      else if ($s[$i] == 'o') 
+          { $c4++;
+            $cnt++; 
+          }
+       else if ($s[$i] == 'u') 
+          { $c5++;
+            $cnt++; 
+          }
+
+  }
+    echo ("<br>Total vowels = $cnt<br>");
+    echo ("a = $c1<br>");
+    echo ("a = $c2<br>");
+    echo ("a = $c3<br>");
+    echo ("a = $c4<br>");
+    echo ("a = $c5<br>");
+
+    }
+countVowels("Shrirampur");
+?>

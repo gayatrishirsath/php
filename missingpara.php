@@ -1,0 +1,9 @@
+<?php
+function add($a,$b)
+{
+$c=$a+$b;
+echo("<br>Sum=".$c);
+}
+add(99);
+add(11,55);
+?>
