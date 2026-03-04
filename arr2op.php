@@ -1,0 +1,10 @@
+<?php
+$a=array(101=>"om",102=>"sai",103=>"ram");
+print_r($a);
+echo("<br> key and value<br>");
+echo("______________________");
+foreach($a as $k=>$v)
+{
+  echo("<br>$k=$v");
+}
+?>
